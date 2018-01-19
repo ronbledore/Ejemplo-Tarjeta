@@ -1,0 +1,12 @@
+body{
+	margin: 0px;
+}
+.container{
+	border: 2px solid #cecece;
+	border-radius: 10px;
+	padding: 2em;
+	width: 60%;
+	margin: 50px calc(20% - 4em - 4em);
+	background: rgb(235, 235, 235);
+	box-shadow: 5px 5px 10px #cecece;
+}
