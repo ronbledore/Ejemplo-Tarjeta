@@ -59,35 +59,64 @@
 //window.alert (saludo);
 
 var person = {
-	name: 'Peter',
+	nombre: 'Homero',
 	apellido: 'Simpson',
-	color: 'Yellow',
+	color: 'Amarillo',
 	altura: 1.75, 
-	foto: 'img'
-
-	saludar: function () {
-	//la funcion encierra un bloque de codigo
-	//this alucion a si mismo
-	window.alert('Hola' + this.nombre)	
-	}
-}; 
-//se agrupan las caracteristicas entre comas
-homero.saludar();
+	foto: 'http://www.ellitoral.com/um/fotos/151769_homer_simpson.jpg',
 
 crearTarjeta: function () {
+
+	console.log('sfsfd');
 	//Seleccionamos el body
 	var body = document.getElementById('body');
 	//crear un div y lo guardmos en la variable card
-	var card = document.creteElement('div')
+	var card = document.createElement('div')
 	//agregamos la clase card a nuestro div
 	card.setAttribute('class', 'card')
-	//creamos una imgagen y la guardamos en la variable perfil
+	//creamos una imagen y la guardamos en la variable perfil
 	var perfil = document.createElement('img');
 	//agregamos la ruta de la imagen
 	perfil.setAttribute('src', this.foto);
 	//añadimos como hijo la imagen en nuestro div
+	perfil.setAttribute('id', 'imagen')
   card.appendChild(perfil);
-  //añadimos como hijo el div en el body
+  console.log(card);
+    //añadimos como hijo el div en el body
 	body.appendChild(card);
 
+
+	var texto = document.createElement('p');
+	var nameText = document.createTextNode('Nombre: ' + this.nombre);
+	texto.appendChild(nameText);
+	card.appendChild(texto);
+	console.log(texto);
+	//texto.appendChild(card);
+
+	var texto = document.createElement('p');
+	var nameText = document.createTextNode('Apellido: ' + this.apellido);
+	texto.appendChild(nameText);
+	card.appendChild(texto);
+	console.log(texto);
+
+		var texto = document.createElement('p');
+	var nameText = document.createTextNode('Color: ' + this.color);
+	texto.appendChild(nameText);
+	card.appendChild(texto);
+	console.log(texto);
+
+
+		var texto = document.createElement('p');
+	var nameText = document.createTextNode('Altura: ' + this.altura);
+	texto.appendChild(nameText);
+	card.appendChild(texto);
+	console.log(texto);
 }
+};
+ var div = document.createElement('div');
+  div.appendChild(card);
+  div.setAttribute('id', 'texto');
+  console.log(div);
+
+//se agrupan las caracteristicas entre comas
+

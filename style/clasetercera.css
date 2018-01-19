@@ -6,13 +6,23 @@ body{
 	border:1px solid #cecece;
 	border-radius: 10px;
 	width: 50%;
-	display: inline-block;
 	background: white;
 	box-shadow: 6px 6px 6px #cecece;
 	padding: 1ex;
-	margin: 100px calc(25% -2em - 2px);
+	margin: 100px calc(25% - 2em - 2px);
 }
-.perfil{
-	width: 200px;
+#imagen{
+	width: 50%;
 	border-radius: 50%;
+	height: 200px;
+}
+.texto{
+	width: 200%;
+	font-size:15px;
+}
+#info {
+	display: inline-block;
+}
+#texto{
+	display: inline-block;
 }
