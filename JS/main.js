@@ -71,15 +71,15 @@ crearTarjeta: function () {
 	//Seleccionamos el body
 	var body = document.getElementById('body');
 	//crear un div y lo guardmos en la variable card
-	var card = document.createElement('div')
+	var card = document.createElement('div');
 	//agregamos la clase card a nuestro div
-	card.setAttribute('class', 'card')
+	card.setAttribute('class', 'card');
 	//creamos una imagen y la guardamos en la variable perfil
 	var perfil = document.createElement('img');
 	//agregamos la ruta de la imagen
 	perfil.setAttribute('src', this.foto);
 	//añadimos como hijo la imagen en nuestro div
-	perfil.setAttribute('id', 'imagen')
+	perfil.setAttribute('id', 'imagen');
   card.appendChild(perfil);
   console.log(card);
     //añadimos como hijo el div en el body
@@ -120,3 +120,54 @@ crearTarjeta: function () {
 
 //se agrupan las caracteristicas entre comas
 
+
+
+//classe cuarta
+
+//los arreglos pueden ser objetos 
+var users = [];
+{
+	name = 'Pedro'
+	last_name: 'Manriquez',
+	city: 'Temuco'
+},{
+	name = 'Pedro'
+	last_name: 'Manriquez',
+	city: 'Temuco'
+},{
+	name = 'Pedro'
+	last_name: 'Manriquez',
+	city: 'Temuco'
+},{<
+	name = 'Pedro'
+	last_name: 'Manriquez',
+	city: 'Temuco'
+},
+var tbody = document.getElementById('data')
+for(var i = 0;i<users.length;i++){
+	var tr = 
+}
+
+users.forEach(function(user){
+	var tr = document.createElement('tr');
+	var td1 = document.createElement('td');
+	var td2 = document.createElement('td');
+  var td3 = document.createElement('td');
+  var td1Text = documentcreateTextNode(user.name);
+  var td2Text = documentcreateTextNode(user.last_name);
+  var td3Text = documentcreateTextNode(user.city);
+  td1.appendChild(td1Text);
+  td2.appendChild(td2Text);
+  td3.appendChild(td3Text);
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tbody.appendChild(tr);
+});
+
+var numbers = [1,2,3,4,5];
+var dobleNumbers = numbers.map(function(num) {
+return num * 2;
+});
+console.log(numbers)
+console.log(dobleNumbers)
