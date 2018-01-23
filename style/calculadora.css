@@ -1,0 +1,46 @@
+body{
+	margin:0;
+	background-color: blue;
+}
+body #caja1{
+	margin: 5% 5% 10% 33%;
+	border: 3px solid black;
+	width: 35%;
+	background-color: gray;
+	padding-left: 3%;
+}
+body #caja2{
+margin:0%;
+content: 100%;
+}
+input{
+	border: 1px solid blue;
+	margin: 5% 5% 5% 5%;
+	padding: 0%;
+	width: 80%;
+	font-size: 50px;
+	font-family: 'Risque', cursive;
+	border-radius: 3%;
+	text-align: right;
+}
+
+ .botones{
+ 	display: inline-flex;
+	border: 1px solid black;
+	margin: 3%;
+	padding: 2%;
+width: 10%;
+background-color: white; 
+text-align: center;
+	font-family: 'Risque', cursive;
+	font-size: 50px;
+	border-radius: 4%;
+}
+
+bottom:hover{
+	background: center;
+	background-color:  #A84441;
+	color: white;
+	font-style: oblique;
+	position: right; 
+}
